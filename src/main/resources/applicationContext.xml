@@ -24,7 +24,10 @@
 
 
     <bean id="PlayerBean"
-          class="tc.springframework.PlayerMusic">
+          class="tc.springframework.PlayerMusic"
+          scope="singleton"
+          init-method="initMethod"
+          destroy-method="destroyMethod">
         <constructor-arg ref="JazzMusicBean"/>
         <property name="name" value="${playerMusic.name}"/>
         <property name="volume" value="${playerMusic.volume}"/>

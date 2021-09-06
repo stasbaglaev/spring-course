@@ -8,6 +8,13 @@ public class PlayerMusic {
     private int volume;
     private Music music;
 
+    private void initMethod(){
+        System.out.println("Init player music");
+    }
+
+     void destroyMethod(){
+        System.out.println("Destroy player music");
+    }
     private List<Music> musicList = new ArrayList<>();
 
     public List<Music> getMusicList() {
