@@ -5,11 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
+                "applicationContext.xml");
 
-        PlayerMusic playerMusic = context.getBean("MusicPlayerBean", PlayerMusic.class);
-        playerMusic.playMusic(GenreMusic.ROCK);
+        PlayerMusic playerMusic = context.getBean("playerMusic", PlayerMusic.class);
+        playerMusic.playMusic(GenreMusic.CLASSICAL);
         context.close();
     }
 }

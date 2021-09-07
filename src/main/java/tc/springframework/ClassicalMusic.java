@@ -1,8 +1,11 @@
 package tc.springframework;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ClassicalMusic implements Music{
 
     @Override

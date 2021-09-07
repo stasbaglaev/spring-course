@@ -1,10 +1,13 @@
 package tc.springframework;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
+@Component
 public class PlayerMusic {
 
     private List<Music> musicList = new ArrayList<>();
@@ -12,7 +15,7 @@ public class PlayerMusic {
     public List<Music> getMusicList() {
         return musicList;
     }
-
+    @Autowired
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
@@ -25,5 +28,4 @@ public class PlayerMusic {
             }
         }
     }
-
 }
