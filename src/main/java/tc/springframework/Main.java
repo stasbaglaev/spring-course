@@ -9,6 +9,7 @@ public class Main {
 
         PlayerMusic playerMusic = context.getBean("playerMusic", PlayerMusic.class);
         playerMusic.playMusic(GenreMusic.CLASSICAL);
+        playerMusic.playMusic(GenreMusic.ROCK);
         context.close();
     }
 }
