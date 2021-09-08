@@ -9,6 +9,7 @@ import java.util.Random;
 
 @Component
 public class PlayerMusic {
+
     private List<Music> musicList = new ArrayList<>();
 
     public List<Music> getMusicList() {
